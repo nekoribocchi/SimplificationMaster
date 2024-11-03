@@ -32,7 +32,7 @@ struct FactorizationView: View {
     func primeFactors(of number: Int) -> [Int] {
         var n = number
         var factors: [Int] = []
-        var divisor = 2
+        var divisor = 2 // 最小の素数2を初期値
         while n > 1 {
             while n % divisor == 0 {
                 factors.append(divisor)

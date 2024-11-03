@@ -19,7 +19,7 @@ class Simplifier: ObservableObject {
     
     // 分数を簡約するメソッド
     func simplify() {
-        // 分子と分母を整数に変換し、分母が0でないことを確認
+        // 分子と分母が整数に変換可能であるか、分母が0でないことを確認
         guard let num = Int(numerator), let den = Int(denominator), den != 0 else {
             return
         }
